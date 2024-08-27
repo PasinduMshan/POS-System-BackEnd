@@ -1,4 +1,4 @@
-package lk.ijse.possystembackend.dto;
+package lk.ijse.possystembackend.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -9,14 +9,11 @@ import java.sql.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-public class PlaceOrderDto {
-    private String orderId;
+public class PlaceOrder {
+    private String OrderId;
     private Date date;
     private String orderCusId;
-    private String orderCusName;
-    private String orderCusAddress;
     private String orderItemId;
-    private String orderItemName;
     private double orderItemPrice;
     private double orderItemQty;
     private double orderCash;
