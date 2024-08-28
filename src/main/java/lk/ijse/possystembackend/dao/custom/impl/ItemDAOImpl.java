@@ -23,7 +23,7 @@ public class ItemDAOImpl implements ItemDAO {
     }
 
     @Override
-    public Item search(String Id) throws SQLException {
+    public Item search(String value) throws SQLException {
         return null;
     }
 

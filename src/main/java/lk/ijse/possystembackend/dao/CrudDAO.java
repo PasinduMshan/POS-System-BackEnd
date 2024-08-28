@@ -7,11 +7,12 @@ import java.util.ArrayList;
 public interface CrudDAO<T> extends SuperDAO {
     boolean save(T entity) throws SQLException, NamingException;
 
-    boolean update(T entity) throws SQLException;
+    boolean update(T entity) throws SQLException, NamingException;
 
-    boolean delete(String id) throws SQLException;
+    boolean delete(String id) throws SQLException, NamingException;
 
-    T search(String Id) throws SQLException;
+    T search(String value) throws SQLException, NamingException;
 
-    ArrayList<T> getAll() throws SQLException;
+    ArrayList<T> getAll() throws SQLException, NamingException;
 }
+
