@@ -25,12 +25,12 @@ public class CustomerDAOImpl implements CustomerDAO {
 
     @Override
     public boolean delete(String id) throws SQLException, NamingException {
-        return SQLUtil.execute("DELETE FROM customer WHERE id = ?", id);
+        return SQLUtil.execute("DELETE FROM customer WHERE Id = ?", id);
     }
 
     @Override
     public Customer search(String value) throws SQLException, NamingException {
-        ResultSet resultSet = SQLUtil.execute("SELECT * FROM customer WHERE tel = ?", value);
+        ResultSet resultSet = SQLUtil.execute("SELECT * FROM customer WHERE Tel = ?", value);
         while (resultSet.next()) {
             return new Customer(
                     resultSet.getString("Id"),

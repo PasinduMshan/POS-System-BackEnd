@@ -11,3 +11,10 @@ create table customer(
 );
 
 select * from customer;
+
+create table item(
+    itemId VARCHAR(50) primary key,
+    itemName VARCHAR(255),
+    itemUnitPrice DOUBLE,
+    itemQty DOUBLE
+);
